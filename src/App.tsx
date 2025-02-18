@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Terminal, Github, ArrowRight, Command, Check, Trash2, List, Package, Plus } from 'lucide-react';
+import Documentation from './components/Documentation';
 
 function App() {
+  const [showDocs, setShowDocs] = useState(false);
+
+  if (showDocs) {
+    return <Documentation onBack={() => setShowDocs(false)} />;
+  }
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -12,8 +19,20 @@ function App() {
             <span className="text-xl font-bold">TaskMaster CLI</span>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="glass glass-hover px-4 py-2 rounded-full">Documentation</a>
-            <a href="#" className="glass glass-hover px-4 py-2 rounded-full">GitHub</a>
+            <button 
+              onClick={() => setShowDocs(true)}
+              className="glass glass-hover px-4 py-2 rounded-full"
+            >
+              Documentation
+            </button>
+            <a 
+              href="https://github.com/BhaveshG-22/CLI-Todo" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="glass glass-hover px-4 py-2 rounded-full"
+            >
+              GitHub
+            </a>
           </div>
         </nav>
 
@@ -26,13 +45,21 @@ function App() {
             Simple, efficient, and beautiful CLI interface.
           </p>
           <div className="flex space-x-4">
-            <button className="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-full font-semibold flex items-center space-x-2 transition-all">
+            <button 
+              onClick={() => setShowDocs(true)} 
+              className="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-full font-semibold flex items-center space-x-2 transition-all"
+            >
               <span>Get Started</span>
               <ArrowRight className="w-5 h-5" />
             </button>
-            <button className="glass glass-hover px-8 py-3 rounded-full font-semibold">
+            <a 
+              href="https://github.com/BhaveshG-22/CLI-Todo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="glass glass-hover px-8 py-3 rounded-full font-semibold"
+            >
               View on GitHub
-            </button>
+            </a>
           </div>
 
           <div className="mt-12 w-full max-w-2xl terminal">
@@ -129,7 +156,12 @@ function App() {
               <span className="font-semibold">TaskMaster CLI</span>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a 
+                href="https://github.com/BhaveshG-22/CLI-Todo" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
+              >
                 <Github className="w-6 h-6" />
               </a>
             </div>
