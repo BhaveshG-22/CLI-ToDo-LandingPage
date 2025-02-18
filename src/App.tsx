@@ -37,7 +37,7 @@ function App() {
         </nav>
 
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
+          <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text pb-2">
             Command Line Task Management
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl">
