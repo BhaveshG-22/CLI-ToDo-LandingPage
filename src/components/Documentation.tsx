@@ -49,7 +49,7 @@ function Documentation({ onBack }: { onBack: () => void }) {
           <div className="glass rounded-2xl p-8 mb-12">
             <h2 className="text-2xl font-bold mb-6">Installation</h2>
             <div className="terminal mb-6">
-              <p>git clone https://github.com/yourusername/taskmaster-cli.git</p>
+              <p>git clone https://github.com/BhaveshG-22/CLI-Todo</p>
               <p>cd taskmaster-cli</p>
               <p>npm install</p>
             </div>

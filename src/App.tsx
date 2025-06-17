@@ -19,16 +19,16 @@ function App() {
             <span className="text-xl font-bold">TaskMaster CLI</span>
           </div>
           <div className="flex space-x-6">
-            <button 
+            <button
               onClick={() => setShowDocs(true)}
               className="glass glass-hover px-4 py-2 rounded-full"
             >
               Documentation
             </button>
-            <a 
-              href="https://github.com/BhaveshG-22/CLI-Todo" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://github.com/BhaveshG-22/CLI-Todo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="glass glass-hover px-4 py-2 rounded-full"
             >
               GitHub
@@ -37,24 +37,24 @@ function App() {
         </nav>
 
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text pb-2">
+          <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text pb-3">
             Command Line Task Management
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl">
-            A powerful, filesystem-based TODO manager built with Node.js. 
+            A powerful, filesystem-based TODO manager built with Node.js.
             Simple, efficient, and beautiful CLI interface.
           </p>
           <div className="flex space-x-4">
-            <button 
-              onClick={() => setShowDocs(true)} 
+            <button
+              onClick={() => setShowDocs(true)}
               className="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-full font-semibold flex items-center space-x-2 transition-all"
             >
               <span>Get Started</span>
               <ArrowRight className="w-5 h-5" />
             </button>
-            <a 
-              href="https://github.com/BhaveshG-22/CLI-Todo" 
-              target="_blank" 
+            <a
+              href="https://github.com/BhaveshG-22/CLI-Todo"
+              target="_blank"
               rel="noopener noreferrer"
               className="glass glass-hover px-8 py-3 rounded-full font-semibold"
             >
@@ -63,13 +63,14 @@ function App() {
           </div>
 
           <div className="mt-12 w-full max-w-2xl terminal">
-            <p className="command">$ node index.js add "Complete project documentation"</p>
+            <p className="command">$ node index.js add < span className="underline">complete-assignment</span></p>
             <p className="output mt-2">✓ Task added successfully!</p>
-            <p className="command mt-4">$ node index.js display</p>
-            <div className="output mt-2">
-              <p>1. [✓] Setup development environment</p>
-              <p>2. [ ] Complete project documentation</p>
-              <p>3. [ ] Deploy to production</p>
+            <p className="command mt-4">$ node index.js < span className="underline">display</span></p>
+            <div className="output mt-2 flex flex-col items-start ml-auto bg-gray-800 p-4 rounded-lg">
+              <p>1. [✓] Setup-development-environment</p>
+              <p>2. [ ] Complete-project-documentation</p>
+              <p>3. [ ] Deploy-to-production</p>
+              <p>4. [ ] complete-assignment</p>
             </div>
           </div>
         </div>
@@ -156,9 +157,9 @@ function App() {
               <span className="font-semibold">TaskMaster CLI</span>
             </div>
             <div className="flex space-x-6">
-              <a 
-                href="https://github.com/BhaveshG-22/CLI-Todo" 
-                target="_blank" 
+              <a
+                href="https://github.com/BhaveshG-22/CLI-Todo"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
